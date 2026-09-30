@@ -1,6 +1,6 @@
 # Tu landing page para tu negocio — Landing page
 
-Landing page estática y completamente editable para **Giselle Kaplun**. Su objetivo comercial es vender el servicio de **desarrollo de landing pages** ($450.000): dar a emprendedores y pequeñas empresas una dirección propia en internet, clara, propia y que trabaje como vidriera digital.
+Su objetivo comercial es vender el servicio de **desarrollo de landing pages: dar a emprendedores y pequeñas empresas una dirección propia en internet, clara, propia y que trabaje como vidriera digital.
 
 ## Estructura del proyecto
 

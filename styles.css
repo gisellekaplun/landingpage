@@ -247,7 +247,9 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 
 .trust-row svg { color: var(--terracotta); }
 
-/* ================= Visual del hero (ficha de Google) ================= */
+/* ================= Visual del hero =================
+   La foto es vertical y va entera, con su fondo. Se limita el ancho para que
+   no se dispare la altura de la sección, y se apoya sobre el papel. */
 
 .hero-visual {
   position: relative;
@@ -256,167 +258,19 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   place-items: center;
 }
 
-.orbit {
-  position: absolute;
-  border: 1px solid rgba(185, 87, 63, .45);
-  border-radius: 50%;
-}
-
-.orbit-one {
-  width: 430px;
-  height: 430px;
-  transform: rotate(-26deg) scaleX(.74);
-}
-
-.orbit-two {
-  width: 510px;
-  height: 510px;
-  transform: rotate(37deg) scaleX(.66);
-  border-color: rgba(196, 156, 74, .45);
-}
-
-.search-card {
-  width: min(390px, 88%);
+.hero-figure {
+  width: min(100%, 400px);
   position: relative;
   z-index: 2;
-  background: #f9f7f1;
-  padding: 13px;
-  box-shadow: 22px 25px 0 rgba(185, 87, 63, .12), 0 18px 50px rgba(31, 61, 43, .12);
-  transform: rotate(-3deg);
+  margin: 0;
 }
 
-.search-bar {
-  height: 38px;
-  border: 1px solid #ddd8cf;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 0 12px;
-  color: #777168;
-  font-size: 11px;
-  background: white;
-}
+/* La foto va entera, con su fondo: se muestra a escala natural, sin recortes. */
 
-.search-bar b {
-  margin-left: auto;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--terracotta);
-}
-
-.browser-dots { display: flex; gap: 5px; }
-
-.browser-dots span {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #ddd8cf;
-}
-
-.browser-dots span:first-child { background: var(--terracotta); }
-
-.search-bar > span:last-of-type { color: var(--ink); }
-
-.result-card {
-  margin-top: 12px;
-  padding: 23px 20px 18px;
-  border: 1px solid #ddd8cf;
-  background: white;
-}
-
-.result-top { display: flex; align-items: center; gap: 10px; }
-
-.map-pin {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  background: #e7c8bd;
-  color: var(--terracotta);
-  border-radius: 50%;
-}
-
-.result-top small {
-  color: var(--muted);
-  font-size: 9px;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: .12em;
-}
-
-.result-card h2 {
-  font-size: 28px;
-  line-height: 1.05;
-  margin: 20px 0 10px;
-}
-
-.stars { color: var(--terracotta); font-size: 14px; }
-
-.stars small {
-  color: var(--muted);
-  font-size: 10px;
-  margin-left: 5px;
-}
-
-.result-lines {
-  margin-top: 19px;
-  display: grid;
-  gap: 8px;
-}
-
-.result-lines span {
-  height: 6px;
-  background: #eee9df;
+.hero-shot {
   display: block;
-}
-
-.result-lines span:first-child { width: 88%; }
-.result-lines span:nth-child(2) { width: 64%; }
-.result-lines span:last-child { width: 76%; }
-
-.result-actions {
-  display: flex;
-  gap: 13px;
-  margin-top: 22px;
-  padding-top: 14px;
-  border-top: 1px solid #e8e3db;
-  color: var(--terracotta);
-  font-size: 10px;
-  font-weight: 800;
-}
-
-.result-actions span { display: flex; align-items: center; gap: 5px; }
-.result-actions svg { width: 14px; }
-
-.card-note {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font: 17px var(--serif);
-  line-height: 1.2;
-}
-
-.card-note svg { color: var(--terracotta); }
-
-.visual-label {
-  position: absolute;
-  z-index: 3;
-  color: var(--terracotta);
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-weight: 800;
-}
-
-.label-top { top: 13%; right: 2%; }
-
-.label-bottom {
-  bottom: 5%;
-  left: 8%;
-  color: #9c8d72;
+  width: 100%;
+  height: auto;
 }
 
 /* ================= Pillars ================= */
@@ -1018,9 +872,6 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   }
 
   .hero-visual { min-height: 370px; }
-  .orbit-one { width: 340px; height: 340px; }
-  .orbit-two { width: 410px; height: 410px; }
-  .search-card { width: 87%; }
 
   .pillars {
     padding: 23px 20px;

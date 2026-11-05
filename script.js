@@ -3,7 +3,7 @@
 // ============================================================
 
 // Cambiá acá el número de WhatsApp (con código de país, sin "+" ni espacios)
-const WHATSAPP_URL = "http://wa.me/541149487553";
+const WHATSAPP_URL = "https://wa.me/541149487553";
 
 // Renderiza los iconos de Lucide (se vuelve a llamar tras cada cambio de DOM)
 lucide.createIcons();

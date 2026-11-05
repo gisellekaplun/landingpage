@@ -141,10 +141,10 @@ El número está en dos lugares:
 1. **`script.js`** (lo usa el formulario): en la primera línea, cambiá el número manteniendo el formato `http://wa.me/CÓDIGOPAÍSNÚMERO` sin `+`, sin guiones ni espacios:
 
 ```js
-const WHATSAPP_URL = "http://wa.me/541149487553";
+const WHATSAPP_URL = "https://wa.me/541149487553";
 ```
 
-2. **`index.html`** (lo usan todos los botones "Quiero...", el menú, el teléfono y el botón flotante `.wa-float`): buscá y reemplazá todas las apariciones de `http://wa.me/541149487553`. El teléfono visible `+54 9 11 4948 7553` también aparece en la sección de contacto.
+2. **`index.html`** (lo usan todos los botones "Quiero...", el menú, el teléfono y el botón flotante `.wa-float`): buscá y reemplazá todas las apariciones de `https://wa.me/541149487553`. El teléfono visible `+54 9 11 4948 7553` también aparece en la sección de contacto.
 
 > **Botón flotante de WhatsApp:** es el círculo verde fijo abajo a la derecha. Está al final del `index.html` (clase `wa-float`) y su estilo (color, tamaño, posición) en `styles.css`. El verde es `#25d366`; podés cambiarlo ahí.
 

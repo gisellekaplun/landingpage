@@ -537,13 +537,15 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .process {
   display: grid;
   grid-template-columns: .9fr 1fr;
-  gap: 11vw;
+  gap: 8.8vw;
   align-items: center;
   background: var(--sand);
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .process-visual {
-  min-height: 420px;
+  min-height: 336px;
   position: relative;
   display: grid;
   place-items: center;
@@ -560,8 +562,8 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 }
 
 .process-circle {
-  width: 245px;
-  height: 245px;
+  width: 196px;
+  height: 196px;
   border: 1px solid var(--terracotta);
   border-radius: 50%;
   display: flex;
@@ -570,7 +572,7 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   justify-content: center;
   color: var(--terracotta);
   text-align: center;
-  font: 27px var(--serif);
+  font: 22px var(--serif);
   line-height: .88;
   background: rgba(244, 240, 232, .5);
   position: relative;
@@ -578,15 +580,15 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   transform: rotate(-8deg);
 }
 
-.process-circle svg { width: 72px; height: 72px; margin-bottom: 17px; }
-.process-circle em { font-size: 37px; }
+.process-circle svg { width: 58px; height: 58px; margin-bottom: 14px; }
+.process-circle em { font-size: 30px; }
 
 .steps { border-top: 1px solid rgba(31, 61, 43, .2); }
 
 .steps > div {
   display: flex;
-  gap: 25px;
-  padding: 15px 0;
+  gap: 20px;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(31, 61, 43, .2);
   font-size: 13px;
   color: #625a51;
@@ -594,7 +596,7 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 
 .steps b {
   color: var(--terracotta);
-  font: 23px var(--serif);
+  font: 18px var(--serif);
 }
 
 .steps span { display: flex; flex-direction: column; gap: 2px; }
@@ -822,8 +824,9 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 @media (max-width: 900px) {
   .hero { gap: 45px; grid-template-columns: 1fr 1fr; }
   .two-col, .offer-grid, .process, .about, .faq-grid, .contact { gap: 50px; }
+  .process { gap: 40px; }
 
-  .process-visual { min-height: 360px; }
+  .process-visual { min-height: 288px; }
   .portrait { height: 400px; }
 }
 
@@ -887,6 +890,7 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   .pillars > div:last-child { border-bottom: 0; }
 
   .section, .contact { padding: 82px 20px; }
+  .process { padding: 66px 20px; gap: 26px; }
   .section-label { margin-bottom: 29px; }
 
   .two-col, .offer-grid, .process, .about, .faq-grid, .contact {
@@ -895,6 +899,8 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
     gap: 32px;
   }
 
+  .process { gap: 26px; }
+
   .two-col h2, .offer h2, .process h2, .about h2, .faq h2, .contact h2 { font-size: 44px; }
   .price-feature strong { font-size: 63px; }
   .included { padding: 27px 22px; }
@@ -902,15 +908,19 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   .offer-lists { gap: 14px; align-self: stretch; }
   .closing-line { margin-top: 52px; padding-top: 30px; }
 
-  .process-visual { min-height: 310px; }
+  .process-visual { min-height: 248px; }
 
   .process-circle {
-    width: 205px;
-    height: 205px;
-    font-size: 23px;
+    width: 164px;
+    height: 164px;
+    font-size: 18px;
   }
 
-  .process-circle em { font-size: 31px; }
+  .process-circle svg { width: 46px; height: 46px; margin-bottom: 11px; }
+  .process-circle em { font-size: 25px; }
+
+  .steps > div { gap: 16px; padding: 10px 0; }
+  .steps b { font-size: 16px; }
 
   .portrait {
     height: 340px;

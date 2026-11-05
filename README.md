@@ -138,7 +138,7 @@ Si la imagen no carga, el diseño no se rompe: se mantiene el espacio reservado 
 
 El número está en dos lugares:
 
-1. **`script.js`** (lo usa el formulario): en la primera línea, cambiá el número manteniendo el formato `http://wa.me/CÓDIGOPAÍSNÚMERO` sin `+`, sin guiones ni espacios:
+1. **`script.js`** (lo usa el formulario): en la primera línea, cambiá el número manteniendo el formato `https://wa.me/CÓDIGOPAÍSNÚMERO` sin `+`, sin guiones ni espacios:
 
 ```js
 const WHATSAPP_URL = "https://wa.me/541149487553";
